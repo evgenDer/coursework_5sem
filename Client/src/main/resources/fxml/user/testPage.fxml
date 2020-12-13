@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="900.0" style="-fx-background-color: f9d56e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.user.ControllerTest">
+    <children>
+        <AnchorPane layoutX="-3.0" layoutY="99.0" prefHeight="580.0" prefWidth="903.0" style="-fx-background-color: f3ecc2;">
+            <children>
+                <VBox layoutX="3.0" prefHeight="580.0" prefWidth="245.0">
+                    <children>
+                        <Button fx:id="btnGroups" mnemonicParsing="false" prefHeight="97.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Группы          " textFill="#f3ecc2">
+                            <font>
+                                <Font name="Segoe Print" size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnSchedule" mnemonicParsing="false" prefHeight="97.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Расписание     " textFill="#f3ecc2">
+                            <font>
+                                <Font name="Segoe Print" size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnTests" mnemonicParsing="false" prefHeight="97.0" prefWidth="292.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text=" Тестирование  " textFill="#f3ecc2">
+                            <font>
+                                <Font name="Segoe Print" size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnProgress" mnemonicParsing="false" prefHeight="97.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Успеваемость" textFill="#f3ecc2">
+                            <font>
+                                <Font name="Segoe Print" size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnAttendance" mnemonicParsing="false" prefHeight="97.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Посещаемость" textFill="#f3ecc2">
+                            <font>
+                                <Font name="Segoe Print" size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnExit" mnemonicParsing="false" prefHeight="97.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text=" Выход             " textFill="#f3ecc2">
+                            <font>
+                                <Font name="Segoe Print" size="24.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            <AnchorPane layoutX="248.0" prefHeight="580.0" prefWidth="654.0">
+               <children>
+                  <Label layoutX="94.0" layoutY="27.0" prefHeight="75.0" prefWidth="520.0" text="Расчет оценки за тест" textFill="#14b1ab">
+                     <font>
+                        <Font name="Segoe Print" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="68.0" layoutY="166.0" text="Правильные ответы:">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fieldCorrectAnswer" layoutX="384.0" layoutY="159.0" prefHeight="48.0" prefWidth="156.0" style="-fx-border-color: f9d56e;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="65.0" layoutY="245.0" prefHeight="40.0" prefWidth="299.0" text="Неправильные ответы:">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fieldErrorAnswer" layoutX="386.0" layoutY="242.0" prefHeight="48.0" prefWidth="156.0" style="-fx-border-color: f9d56e;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="63.0" layoutY="323.0" prefHeight="40.0" prefWidth="299.0" text="Итоговый балл:">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fieldResult" editable="false" layoutX="384.0" layoutY="318.0" prefHeight="48.0" prefWidth="156.0" style="-fx-border-color: f9d56e;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnCalculate" layoutX="34.0" layoutY="470.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="237.0" style="-fx-background-color: #14b1ab; -fx-background-radius: 10;" text="Рассчитать" textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnStudentId" layoutX="310.0" layoutY="472.0" mnemonicParsing="false" onAction="#showTableStudents" prefHeight="59.0" prefWidth="307.0" style="-fx-background-color: #14b1ab; -fx-background-radius: 10;" text="Добавить студенту" textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="74.0" fitWidth="99.0" layoutX="34.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" translateX="0.5" AnchorPane.topAnchor="11.0">
+            <image>
+                <Image url="@../../images/icon.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="135.0" layoutY="-1.0" prefHeight="100.0" prefWidth="418.0" text="EnglishSchool" textFill="#e8505b">
+            <font>
+                <Font name="Segoe Print" size="48.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

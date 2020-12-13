@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="900.0" style="-fx-background-color: f9d56e;" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.admin.ControllerUsers">
+   <children>
+      <AnchorPane layoutY="100.0" prefHeight="583.0" prefWidth="900.0" style="-fx-background-color: f3ecc2;" stylesheets="@../../styles/tab.css">
+         <children>
+            <VBox prefHeight="585.0" prefWidth="245.0" style="-fx-background-color: f3ecc2;">
+               <children>
+                  <Button fx:id="btnDiscount" mnemonicParsing="false" prefHeight="73.0" prefWidth="292.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Скидка            " textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnPayment" mnemonicParsing="false" prefHeight="73.0" prefWidth="256.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Оплата          " textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnGroups" mnemonicParsing="false" prefHeight="73.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Группы          " textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCourse" mnemonicParsing="false" prefHeight="73.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Курсы            " textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnStudents" mnemonicParsing="false" prefHeight="73.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Студенты      " textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnTeachers" mnemonicParsing="false" prefHeight="73.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Преподаватели" textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnUsers" mnemonicParsing="false" prefHeight="73.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text="Пользователи  " textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnExit" mnemonicParsing="false" prefHeight="74.0" prefWidth="245.0" style="-fx-border-color: #e8505b; -fx-background-color: #e8505b;" text=" Выход             " textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="paneUsers" layoutX="245.0" prefHeight="585.0" prefWidth="655.0" style="-fx-background-color: f3ecc2;">
+               <children>
+                  <TableView fx:id="tableUsers" layoutX="73.0" layoutY="41.0" prefHeight="368.0" prefWidth="515.0" stylesheets="@../../styles/table.css">
+                     <columns>
+                        <TableColumn fx:id="columnLogin" minWidth="7.0" prefWidth="176.0" text="Логин" />
+                        <TableColumn fx:id="columnName" prefWidth="180.0" text="Имя" />
+                        <TableColumn fx:id="columnAdmin" prefWidth="157.0" text="Администратор" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="btnDelete" layoutX="73.0" layoutY="465.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #14b1ab; -fx-background-radius: 10;" text="Удалить выбранного" textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnRegister" layoutX="359.0" layoutY="465.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="233.0" style="-fx-background-color: #14b1ab; -fx-background-radius: 10;" text="Регистрация" textFill="#f3ecc2">
+                     <font>
+                        <Font name="Segoe Print" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="74.0" fitWidth="99.0" layoutX="34.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" translateX="0.5" AnchorPane.topAnchor="11.0">
+         <image>
+            <Image url="@../../images/icon.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="135.0" layoutY="-1.0" prefHeight="100.0" prefWidth="418.0" text="EnglishSchool" textFill="#e8505b">
+         <font>
+            <Font name="Segoe Print" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
